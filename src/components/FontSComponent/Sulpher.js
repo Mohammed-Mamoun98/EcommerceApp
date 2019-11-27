@@ -1,13 +1,8 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
-import { Icon } from "react-native-elements";
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp
-} from "react-native-responsive-screen";
 import * as Font from "expo-font";
 
-export class Basker extends Component {
+export class Sulpher extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,7 +12,7 @@ export class Basker extends Component {
 
   async componentDidMount() {
     await Font.loadAsync({
-      'Bask': require("../../../assets/fonts/Baskervville-Italic.ttf")
+      'Bask': require("../../../assets/fonts/SulphurPoint-Light.ttf")
     });
 
     this.setState({
@@ -34,4 +29,4 @@ export class Basker extends Component {
   }
 }
 
-export default Basker;
+export default Sulpher;
